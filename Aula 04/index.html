@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-       <h1>Negrito vs destaque</h1>
+    <h1>Negrito vs destaque</h1>
     <p>Aqui tem um texto em <b>negrito</b></p>
     <p>Aqui tem um texto em <Strong>negrito</Strong></p>
 
@@ -24,5 +26,35 @@
 
     <h1>Deletado e riscado</h1>
     <p>Aqui tem um texto <del>deletado</del> e aqui um <strike>riscado</strike></p>
+    <p>Neste exemplo vou demonstrar um trecho de código </p>
+    <br>
+    <h2>Texto Inserido</h2>
+    <p>Nesta frase vamos demonstrar como <u>destacar um texto inserido</u> na frase de forma semântica</p>
+    <p>Nesta frase vamos demonstrar como <u>destacar um texto inserido</u> na frase de forma não semântica</p>
+    
+    <pre>
+        <code>import math
+
+def calcular_bhaskara(a, b, c):
+    # Calculando o Discriminante (Delta)
+    delta = (b**2) - (4*a*c)
+    
+    print(f"Equação: {a}x² + {b}x + {c} = 0")
+    
+    if delta < 0:
+        return "A equação não possui raízes reais."
+    elif delta == 0:
+        x = -b / (2*a)
+        return f"A equação possui uma raiz real: {x}"
+    else:
+        x1 = (-b + math.sqrt(delta)) / (2*a)
+        x2 = (-b - math.sqrt(delta)) / (2*a)
+        return f"As raízes são: x1 = {x1} e x2 = {x2}"
+
+# Exemplo: x² - 5x + 6 = 0
+print(calcular_bhaskara(1, -5, 6))</code>
+    </pre>
 </body>
+
+
 </html>
